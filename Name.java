@@ -1,24 +1,30 @@
-/*Silly attemt at a name generator
+/*Silly attempt at a name generator
 *
 *
-I'm an author, and I wanted to make a tool 
-to help create fictional names. 
+I'm an author, and I wanted to make a tool
+to help create fictional names.
 
-This program works by randomly selecting a combination 
-of Vowels and Consonants for a random length. 
-Then, my code makes sure that there can only be two 
-of each letter type sequentially.
-This way, instead of just producing letter soup 
-all names generted are at least pronouncable (in theory). 
+This code works by randomly selecting a combination
+of Vowels and Consonants for a random length.
+Then, the code ensures there can only be two
+of each type sequentially.
+This way, instead of just producing letter soup,
+all names generated are (in theory) pronouncable.
 
-Though I can't promise that even most names may
-even be to your taste, by logic, this can produce 
-all possible names (between 3-8 characters). 
-So, if you're open to any names, then hopefully, 
-this tool will eventually help you find one.
+Honestly, most of these 'names' will be weird.
+But this tool is exactly what I needed
+for suggesting fictional names.
+By the codes logic, this can produce all
+possible names (between 3-8 characters).
+So, if you're open to anything, then hopefully
+this code will eventually help you find it.
+
+For extra fun, try pasting the outputs into any TTS!
+I like Google Translate since its usually smart enough
+to read most names and you can choose thr voice.
 
 Feel free to pass it on to any who may need it.
-Thanks!
+Thanks! (≧∇≦)/
 *
 *
 */
@@ -31,7 +37,7 @@ public class Name
         System.out.print("By Wesley Lancaster 12/12/23\n\n");
         Name N = new Name();
 
-        String NormalType = "made with normal engligh letters";
+        String NormalType = "made with normal engliesgh lattuhrs";
         String NormalV[] = {"a", "e", "i", "o", "u"};
         String NormalC[] = {
                 "b", "c", "d", "f", "g", "h",
@@ -87,7 +93,7 @@ public class Name
             for(int i =0; i < length; i++){
                 //this 'type' is respondiple for randomly selecting letters.
                 int type = rand.nextInt(3 - 1) + 1;
-                //this switch ensures no more than two sequential Vowels or Consonants 
+                //this switch ensures no more than two sequential Vowels or Consonants
                 switch(type){
                     case 1:
                         if(v >= 1){
